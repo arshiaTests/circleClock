@@ -52,6 +52,15 @@
         .message .success {
             color: #27ae60
         }
+        #error-message {
+            color: #e74c3c;
+            font-size: .9em;
+            display: none;
+        }
+
+        #error-message.active {
+            display: block;
+        }
 
     </style>
 </head>
@@ -61,6 +70,7 @@
             <input type="text" id="input-counter" placeholder="زمان مورد نظر خود را به ثانیه وارد کنید">
             <button id="start-counter">شروع</button>
         </div>
+        <div id="error-message"></div>
         <div class="c100 p50">
             <span>250</span>
             <div class="slice">
@@ -73,5 +83,7 @@
             <span class="success">شمارنده با موفقیت به پایان رسید</span>
         </div>
     </div>
+    <script src="script.js">
+    </script>
 </body>
 </html>
